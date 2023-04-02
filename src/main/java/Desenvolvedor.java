@@ -1,28 +1,30 @@
+
+/**
+     *
+     */
 public class Desenvolvedor {
 
-    public String getStackOfDesenvolvedor(String stack) {
-        return stack;
+    String name;
+
+    String stack;
+
+    String country;
+
+    public Desenvolvedor(String name, String Stack, String country) {
+        this.name = name;
+        this.stack = stack;
+        this.country = country;
     }
 
-    public String getNameOfDesenvolvedor(String name) {
-        return name;
+    @Override
+
+    public String toString() {
+        return "Ola meu nome é /n" + name + "\n Trabalho com a stack " + stack + "\n moro no " + country;
     }
 
-    public String getCountryOfDesenvolvedor(String country) {
-        return country;
+    public static void main (String [] args){
+        Desenvolvedor Kamilacode = new Desenvolvedor(name: "Gerson" , Stack: "Java" , country: "Brasil");
+        System.out.println(Kamilacode);
     }
 
-    public static void main(String[] args) {
-
-        Desenvolvedor kamilacode = new Desenvolvedor();
-
-        String minhaStack = kamilacode.getStackOfDesenvolvedor("java e spring");
-        String meuPais = kamilacode.getCountryOfDesenvolvedor("brazil");
-        String meuNome = kamilacode.getNameOfDesenvolvedor("name");
-
-        System.out.println(minhaStack);
-        System.out.println(meuPais);
-        System.out.println(meuNome);
-
-    }
 }
